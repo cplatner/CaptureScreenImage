@@ -1,4 +1,4 @@
-//******************************************************************************
+﻿//******************************************************************************
 //* Copyright (c) 2012-2013, Chris Platner
 //* All rights reserved.
 //*
@@ -34,7 +34,7 @@ namespace CaptureScreenImage
 	static class Program
 	{
 		private static bool createdNew;
-		private static Mutex mutex = new Mutex(true, "BigMikeCapture", out createdNew);
+		private static readonly Mutex mutex = new Mutex(true, "CaptureScreenImage", out createdNew);
 
 		[STAThread]
 		static void Main()

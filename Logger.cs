@@ -1,4 +1,4 @@
-//******************************************************************************
+﻿//******************************************************************************
 //* Copyright (c) 2012-2013, Chris Platner
 //* All rights reserved.
 //*
@@ -29,13 +29,14 @@ using System;
 using System.IO;
 using System.Reflection;
 
-/// <summary>Simple and stupid logger
+/// <summary>
+/// Simple and stupid logger
 /// </summary>
 public static class Logger
 {
-	private static string _dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-	private static string _file = Path.GetFileNameWithoutExtension(Assembly.GetExecutingAssembly().Location);
-	private static string _path = Path.Combine(_dir, _file + ".log");
+	private static readonly string _dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+	private static readonly string _file = Path.GetFileNameWithoutExtension(Assembly.GetExecutingAssembly().Location);
+	private static readonly string _path = Path.Combine(_dir, _file + ".log");
 
 	public static void Log(Exception e)
 	{

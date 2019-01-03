@@ -1,4 +1,4 @@
-//******************************************************************************
+﻿//******************************************************************************
 //* Copyright (c) 2012-2013, Chris Platner
 //* All rights reserved.
 //*
@@ -32,7 +32,8 @@ using System.Text;
 
 namespace CaptureScreenImage
 {
-	/// <summary>Pretty sure I got these from the ever-useful http://pinvoke.net/
+	/// <summary>
+    /// Pretty sure I got these from the ever-useful http://pinvoke.net/
 	/// </summary>
 	public static class NativeMethods
 	{
