@@ -1,0 +1,14 @@
+
+# Ignore VS directories
+.vs/
+bin/
+obj/
+packages/
+
+# Ignore VS files
+*.csproj.user
+
+# Ignore OS generated files #
+ehthumbs.db
+Thumbs.db
+desktop.ini
